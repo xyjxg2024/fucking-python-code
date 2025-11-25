@@ -10,7 +10,7 @@ list_a=sorted(list_a)
 
 def fen(mid):
     x=0
-
+    y=1
     for i in list_a:
         if i<=mid:
             x+=1
