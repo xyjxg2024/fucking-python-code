@@ -2,7 +2,7 @@ a ,b=map(int,input().split())
 max_a=1e9
 min_a=0
 list_a=[]
-
+s=1
 for i in range(a):
     aa=int(input())
     list_a.append(aa)
