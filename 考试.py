@@ -44,7 +44,7 @@ print(b)
 #         raise BaseException('除数不为0')
 #     else:
 #         print(x/y)
-#
+
 # n=eval(input())
 # a=eval(input())
 # b=eval(input())
