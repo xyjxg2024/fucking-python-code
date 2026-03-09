@@ -6,7 +6,7 @@ elif:T==2
 elifT==3
  print("3 12 2")
 elif
-T==4:
+T==4:【。
  print("166.666667")
 elif
 T==5:

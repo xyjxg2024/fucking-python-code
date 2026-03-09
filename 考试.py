@@ -1,7 +1,7 @@
 #第七章第一题:
-a=input()
-b=a.replace('py','python')
-print(b)
+# a=input()
+# b=a.replace('py','python')
+# print(b)
 
 #第七章第二题:
 # list_a=[]
@@ -83,7 +83,7 @@ dog.wangwang()
 
 # #第十章第二题:
 class student:
-    def __init__(self,name=age,chinese,math,english):
+    def __init__(self,name,age,chinese,math,english):
         self.name=name
         self.age=age
         self.chinese=chinese
@@ -113,4 +113,3 @@ class HighSchoolStudent(student):
         return max(self.chinese,self.math,self.english,self.chemistry,self.physics,self.biology,self.history,self.politics)
 zm = HighSchoolStudent('zhangming',20,69,88,100,75,83,95,87,62)
 print(zm.name,zm.get_average(),zm.get_max())
-while :

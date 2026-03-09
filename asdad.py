@@ -1,13 +1,27 @@
-a = int(input())
-list_a =[0]+sorted(list(map(int, input().split())))
-x = int(input())
-for _ in range(x):
+t=int(input())
+for _ in range(t):
     n=int(input())
-    l, r = 0,a
-    while l <= r:
-        mid = (l + r) // 2
-        if list_a[mid] <= n:
-            l = mid + 1
-        else:
-            r = mid - 1
-    print(l-1)
+    for i in range(n):
+        x,y=map(int,input().split())
+# 4
+# 4
+# 2 2
+# 1 6
+# 1 10
+# 1 13
+# 5
+# 3 4
+# 3 1
+# 2 5
+# 3 2
+# 3 3
+# 6
+# 1 2
+# 3 4
+# 1 4
+# 3 4
+# 3 5
+# 2 3
+# 1
+# 1 1
+        
