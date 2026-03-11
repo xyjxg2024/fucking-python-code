@@ -1,11 +1,24 @@
-list_a=list(map(str,input().strip()))
-list_b=list(map(str,input().strip()))
-
-print(list_a)
-print(list_b)
-for i in range(len(list_a)):
-    for j in range(len(list_b)):
-        if list_a[i]!=list_b[j]:
-            list_a.remove(list_a[i])
-list_c=''.join(list_a)
-print(list_c)
+list_a=list(map(int,input().split()))
+list_b=[]
+num=0
+ans=0
+for i in range(4):
+    list_b.append(list_a[i])
+num_max=max(list_b)
+for i in range(4):
+    if num_max-list_b[i]>list_a[-1]:
+        num+=1
+        ans=i+1
+    if list_b[i]<list_a[-2]:
+        num+=1
+        ans=i+1
+if  num>1:
+    print(f"Warning: please check all the tires!")
+elif num==1:
+    print(f"Warning: please check #{ans}!")
+else:
+    print("Normal")
+# print(num)
+# print(ans)
+# print(list_b)
+# # 242 251 231 248 230 20

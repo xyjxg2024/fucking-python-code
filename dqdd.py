@@ -1,10 +1,9 @@
-list_a = list(input().strip())
-list_b = list(input().strip())
-
-# 倒序遍历，删除不影响前面的索引
-for i in range(len(list_a) - 1, -1, -1):
-    if list_a[i] in list_b:
-        list_a.pop(i)  # 或 list_a.remove(list_a[i])，但 pop(i) 更高效
-
-list_c = ''.join(list_a)
-print(list_c)
+# list_a=list(map(str,input().split()))
+list_a = list(input().rstrip('\n'))  # 只删除换行符，保留其他空格
+for i in range(len(list_a)):
+    if "6666666666" in list_a[i]:
+        list_a[i]="27"
+    elif "6666" in list_a[i]:
+        list_a[i]="9"
+print(' '.join(list_a))
+#it is so 666 really 6666 what 66666 else can I say 6666666666
